@@ -1,5 +1,3 @@
 # sample
 sample for webhoot
-sample
-smple2
-ghjk
+#sample file text
