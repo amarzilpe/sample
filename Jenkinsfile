@@ -13,9 +13,8 @@ pipeline{
     }
     stage('Production'){
       steps{
-        sh label: '', script: 'mkdir -p /opt/jenkins/'
-        sh label: '', script: 'touch /opt/jenkins/genfile.txt'
-        sh label: '', script: 'echo "This is Production stage" >>  /opt/jenkins/genfile.txt'
+        sh label: '', script: 'sudo mkdir -p /opt/jenkins'
+        
       }
     }
   }
