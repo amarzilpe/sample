@@ -13,6 +13,7 @@ pipeline{
     }
     stage('Production'){
       steps{
+        echo "This is pro"
         sh label: '', script: 'sudo mkdir -p /opt/jenkins'
         
       }
