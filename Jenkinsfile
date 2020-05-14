@@ -14,7 +14,7 @@ pipeline{
     stage('Production'){
       steps{
         echo "This is prod"
-        sh label: '', script: 'sudo mkdir -p /opt/jenkins'
+        sh label: '', script: 'cat /var/lib/jenkins/file.txt'
         
       }
     }
