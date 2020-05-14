@@ -13,8 +13,8 @@ pipeline{
     }
     stage('Production'){
       steps{
-        sudo mkdir -p /opt/jenkins/jenfile.txt
-        echo "This is Production stage" >>  /opt/jenkins/jenfile.txt
+        sh "sudo mkdir -p /opt/jenkins/jenfile.txt"
+        sh "echo "This is Production stage" >>  /opt/jenkins/jenfile.txt"
       }
     }
   }
