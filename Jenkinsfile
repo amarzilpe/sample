@@ -13,7 +13,7 @@ pipeline{
     }
     stage('Production'){
       steps{
-        echo "This is prod"
+        echo "This is production"
         sh label: '', script: 'mkdir -p /home/admin/jenkins'
         
       }
