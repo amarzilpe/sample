@@ -14,8 +14,6 @@ pipeline{
     stage('Production'){
       steps{
         echo "This is production..."
-       # sh label: '', script: 'sudo mkdir -p /home/admin/jenkins'
-        
       }
     }
   }
